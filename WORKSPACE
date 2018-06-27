@@ -118,11 +118,11 @@ bind(
 
 # OpenFst, OpenGrm NGram & Thrax
 
-new_git_repository(
+new_http_archive(
     name = "openfst",
     build_file = "bazel/openfst.BUILD",
-    remote = "https://github.com/mjansche/openfst.git",
-    tag = "1.6.3",
+    strip_prefix = "openfst-1.6.6",
+    urls = ["http://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.6.6.tar.gz"],
 )
 
 new_git_repository(
