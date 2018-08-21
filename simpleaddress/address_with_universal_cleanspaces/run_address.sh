@@ -25,6 +25,9 @@ for data in "num 123" "නො. 123" "අංක 123"; do
 	echo ""
 done
 
+# Copy bazel far
+cp bazel-genfiles/simpleaddress/address_with_universal_cleanspaces/address.far simpleaddress/address_with_universal_cleanspaces/bazel_address.far
+
 
 echo ""
 echo "Runnning Pure Thrax"

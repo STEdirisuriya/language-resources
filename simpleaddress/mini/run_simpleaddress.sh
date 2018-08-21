@@ -27,6 +27,8 @@ for data in "num 123" "no. 123" "අංක 123"; do
 	echo ""
 done
 
+# Copy bazel far
+cp bazel-genfiles/simpleaddress/mini/simpleaddress.far simpleaddress/mini/bazel_simpleaddress.far
 
 if [[ ${RUN_RANDOMGEN} == True ]]; then
 	for data in "num 123" "no. 123" "අංක 123"; do
