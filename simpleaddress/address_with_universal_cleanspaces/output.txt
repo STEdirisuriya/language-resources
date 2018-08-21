@@ -1,0 +1,23 @@
+Runnning bazel Thrax
+
+Test num 123 
+Input string: Output string: address { thoroughfare { premises: "num" number: "123" } }
+Input string: 
+Test නො. 123 
+Input string: Rewrite failed.
+Input string: 
+Test අංක 123 
+Input string: Rewrite failed.
+Input string: 
+
+Runnning Pure Thrax
+
+Test num 123 
+Input string: Output string: address { thoroughfare { premises: "num" number: "123" } }
+Input string: 
+Test නො. 123 
+Input string: Output string: address { thoroughfare { premises: "නො." number: "123" } }
+Input string: 
+Test අංක 123 
+Input string: Output string: address { thoroughfare { premises: "අංක" number: "123" } }
+Input string: 

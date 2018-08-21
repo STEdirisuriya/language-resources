@@ -1,0 +1,23 @@
+Runnning bazel Thrax
+
+Test num 123 
+Input string: Output string: num123
+Input string: 
+Test no. 123 
+Input string: Output string: no.123
+Input string: 
+Test අංක 123 
+Input string: Rewrite failed.
+Input string: 
+
+Runnning Pure Thrax
+
+Test num 123 
+Input string: Output string: num123
+Input string: 
+Test no. 123 
+Input string: Output string: no.123
+Input string: 
+Test අංක 123 
+Input string: Output string: අංක123
+Input string: 

@@ -1,7 +1,8 @@
 # sh simpleaddress/mini/run_simpleaddress.sh
 
 
-$(cd simpleaddress/mini && thraxmakedep simpleaddress.grm && make clean && rm -f simpleaddress.far && make)
+cd simpleaddress/mini && rm -f simpleaddress.far && thraxmakedep simpleaddress.grm && make clean && make
+cd ../../
 
 bazel build @thrax//:thraxrandom-generator
 bazel build @thrax//:thraxrewrite-tester
@@ -9,8 +10,6 @@ bazel build @thrax//:thraxrewrite-tester
 bazel build //simpleaddress/mini:simpleaddress_thrax_compile_grm
 
 RUN_RANDOMGEN=False
-
-CLI="bazel-bin/external/thrax/thraxrewrite-tester --far=bazel-genfiles/simpleaddress/mini/simpleaddress.far --rules=RULE"
 
 
 echo ""

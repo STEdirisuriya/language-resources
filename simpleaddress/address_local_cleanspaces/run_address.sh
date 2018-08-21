@@ -2,13 +2,12 @@
 # sh simpleaddress/address_local_cleanspaces/run_address.sh
 
 
-$(cd simpleaddress/address_local_cleanspaces && thraxmakedep address.grm && make clean && rm -f address.far && make)
+cd simpleaddress/address_local_cleanspaces && thraxmakedep address.grm && make clean && rm -f address.far && make
+cd ../../
 
 bazel build //simpleaddress/address_local_cleanspaces:address_thrax_compile_grm
 
 bazel build @thrax//:thraxrewrite-tester
-
-CLI="bazel-bin/external/thrax/thraxrewrite-tester --far=bazel-genfiles/simpleaddress/address_local_cleanspaces/address.far --rules=RULE"
 
 
 echo ""
