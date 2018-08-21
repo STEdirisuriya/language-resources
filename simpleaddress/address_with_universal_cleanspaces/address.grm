@@ -49,5 +49,5 @@ export ADDRESS_NUMBER = Optimize[
   universal_rules.one_space
   universal_func.InvertMarkup[universal_rules.closing_brace]
 ];
-
-export ADDRESS_MARKUP = Optimize[ADDRESS_NUMBER @ universal_rules.CLEAN_SPACES];
+export CLEAN_SPACES = universal_rules.CLEAN_SPACES;
+export ADDRESS_MARKUP = Optimize[ADDRESS_NUMBER @ CLEAN_SPACES];

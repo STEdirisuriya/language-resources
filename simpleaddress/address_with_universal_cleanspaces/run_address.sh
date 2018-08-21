@@ -6,6 +6,8 @@ $(cd simpleaddress/address_with_universal_cleanspaces && thraxmakedep address.gr
 
 bazel build //simpleaddress/address_with_universal_cleanspaces:address_thrax_compile_grm
 
+bazel build @thrax//:thraxrewrite-tester
+
 CLI="bazel-bin/external/thrax/thraxrewrite-tester --far=bazel-genfiles/simpleaddress/address_with_universal_cleanspaces/address.far --rules=RULE"
 
 

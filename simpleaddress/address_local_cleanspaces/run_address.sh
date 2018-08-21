@@ -6,6 +6,8 @@ $(cd simpleaddress/address_local_cleanspaces && thraxmakedep address.grm && make
 
 bazel build //simpleaddress/address_local_cleanspaces:address_thrax_compile_grm
 
+bazel build @thrax//:thraxrewrite-tester
+
 CLI="bazel-bin/external/thrax/thraxrewrite-tester --far=bazel-genfiles/simpleaddress/address_local_cleanspaces/address.far --rules=RULE"
 
 
@@ -22,7 +24,6 @@ for data in "num 123" "නො. 123" "අංක 123"; do
 
 	echo ""
 done
-
 
 echo ""
 echo "Runnning Pure Thrax"
